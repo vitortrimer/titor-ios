@@ -12,6 +12,14 @@
 		A4A6538F2CF134640024F399 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A6538E2CF134640024F399 /* Item.swift */; };
 		A4A653912CF134670024F399 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4A653902CF134670024F399 /* Assets.xcassets */; };
 		A4A653942CF134670024F399 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4A653932CF134670024F399 /* Preview Assets.xcassets */; };
+		A4D2929B2CF4EDC5007F48BB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2929A2CF4EDC5007F48BB /* HomeView.swift */; };
+		A4D2929D2CF4EDD8007F48BB /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D2929C2CF4EDD8007F48BB /* HomeViewModel.swift */; };
+		A4D292A32CF4FC75007F48BB /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D292A22CF4FC75007F48BB /* SearchView.swift */; };
+		A4D292A62CF4FC8E007F48BB /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D292A52CF4FC8E007F48BB /* ProfileView.swift */; };
+		A4D292A92CF4FD69007F48BB /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D292A82CF4FD69007F48BB /* Post.swift */; };
+		A4D292AB2CF4FD71007F48BB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D292AA2CF4FD71007F48BB /* User.swift */; };
+		A4D292AE2CF52D5B007F48BB /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D292AD2CF52D5B007F48BB /* Category.swift */; };
+		A4D292B02CF52DA4007F48BB /* Forum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D292AF2CF52DA4007F48BB /* Forum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +29,14 @@
 		A4A6538E2CF134640024F399 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		A4A653902CF134670024F399 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4A653932CF134670024F399 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A4D2929A2CF4EDC5007F48BB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A4D2929C2CF4EDD8007F48BB /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		A4D292A22CF4FC75007F48BB /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		A4D292A52CF4FC8E007F48BB /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		A4D292A82CF4FD69007F48BB /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		A4D292AA2CF4FD71007F48BB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A4D292AD2CF52D5B007F48BB /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		A4D292AF2CF52DA4007F48BB /* Forum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +69,9 @@
 		A4A653892CF134640024F399 /* Titor */ = {
 			isa = PBXGroup;
 			children = (
+				A4D292982CF4ED6D007F48BB /* Data */,
+				A4D292972CF4ED66007F48BB /* Domain */,
+				A4D292962CF4ED5F007F48BB /* Presentation */,
 				A4A6538A2CF134640024F399 /* TitorApp.swift */,
 				A4A6538C2CF134640024F399 /* ContentView.swift */,
 				A4A6538E2CF134640024F399 /* Item.swift */,
@@ -68,6 +87,83 @@
 				A4A653932CF134670024F399 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A4D292962CF4ED5F007F48BB /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				A4D292A42CF4FC86007F48BB /* Profile */,
+				A4D2929F2CF4FC5C007F48BB /* Search */,
+				A4D2929E2CF4FBB2007F48BB /* CommonSection */,
+				A4D292992CF4ED84007F48BB /* Home */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		A4D292972CF4ED66007F48BB /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				A4D292A72CF4FD42007F48BB /* Models */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		A4D292982CF4ED6D007F48BB /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		A4D292992CF4ED84007F48BB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A4D292B12CF539F7007F48BB /* Sections */,
+				A4D2929A2CF4EDC5007F48BB /* HomeView.swift */,
+				A4D2929C2CF4EDD8007F48BB /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A4D2929E2CF4FBB2007F48BB /* CommonSection */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CommonSection;
+			sourceTree = "<group>";
+		};
+		A4D2929F2CF4FC5C007F48BB /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				A4D292A22CF4FC75007F48BB /* SearchView.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		A4D292A42CF4FC86007F48BB /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				A4D292A52CF4FC8E007F48BB /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		A4D292A72CF4FD42007F48BB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A4D292A82CF4FD69007F48BB /* Post.swift */,
+				A4D292AA2CF4FD71007F48BB /* User.swift */,
+				A4D292AD2CF52D5B007F48BB /* Category.swift */,
+				A4D292AF2CF52DA4007F48BB /* Forum.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A4D292B12CF539F7007F48BB /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sections;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +237,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4A6538D2CF134640024F399 /* ContentView.swift in Sources */,
+				A4D292AE2CF52D5B007F48BB /* Category.swift in Sources */,
+				A4D2929B2CF4EDC5007F48BB /* HomeView.swift in Sources */,
 				A4A6538F2CF134640024F399 /* Item.swift in Sources */,
+				A4D292A92CF4FD69007F48BB /* Post.swift in Sources */,
+				A4D292A62CF4FC8E007F48BB /* ProfileView.swift in Sources */,
+				A4D292AB2CF4FD71007F48BB /* User.swift in Sources */,
+				A4D2929D2CF4EDD8007F48BB /* HomeViewModel.swift in Sources */,
+				A4D292A32CF4FC75007F48BB /* SearchView.swift in Sources */,
 				A4A6538B2CF134640024F399 /* TitorApp.swift in Sources */,
+				A4D292B02CF52DA4007F48BB /* Forum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
