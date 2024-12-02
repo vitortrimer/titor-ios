@@ -1,7 +1,8 @@
 import Foundation
 
-struct Post {
+struct Post: Hashable {
     let id: UUID
+    let title: String
     let content: String
     let imageUrls: [URL]
     let author: User
@@ -11,7 +12,7 @@ struct Post {
     let createdAt: String
 }
 
-public enum Reaction {
+public enum Reaction: Hashable {
     case like
     case love
     case congratulations

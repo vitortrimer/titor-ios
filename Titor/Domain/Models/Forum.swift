@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Forum {
+struct Forum: Hashable {
     let id: UUID
     let name: String
     let categories: [Category]

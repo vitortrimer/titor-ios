@@ -20,16 +20,46 @@ struct HomeView: View {
                  backgroundColor: .init(red: Double(79/255), green: 170/255, blue: 255/255),
                  borderColor: .init(red: Double(32/255), green: 145/255, blue: 250/255))
     ]
+    
+    @State var posts: [Post] = [
+        .init(id: .init(),
+              title: "Post title",
+              content: "This is the post content test",
+              imageUrls: [],
+              author: .init(id: .init(),
+                            username: "vitortrimer",
+                            pictureUrl: URL(string: "https://google.com.br")!,
+                            fullName: "Vitor Trimer",
+                            birthDate: .now,
+                            createdAt: .now, modifiedAt: .now),
+              reactions: [],
+              interactions: [],
+              forum: .init(id: .init(),
+                           name: "Forum",
+                           categories: [],
+                           createdAt: .now,
+                           modifiedAt: .now),
+              createdAt: "")
+    ]
     var body: some View {
-        HStack(spacing: 8) {
-            ForEach(subscriptedCategories, id: \.self) { category in
-                Text(category.name)
-                    .padding(.horizontal, 8)
-                    .padding(.vertical, 4)
-                    .foregroundColor(category.textColor)
-                    .background(category.backgroundColor)
-                    .border(category.borderColor, width: 2)
+        VStack(alignment: .leading, spacing: 8) {
+            HomeHeaderView()
+            ScrollView {
+                ForEach(posts, id: \.self) { post in
+                    PostSummaryView(post: post)
+                }
             }
+//            HStack(alignment: .top) {
+//                ForEach(subscriptedCategories, id: \.self) { category in
+//                    Text(category.name)
+//                        .padding(.horizontal, 8)
+//                        .padding(.vertical, 4)
+//                        .foregroundColor(category.textColor)
+//                        .background(category.backgroundColor)
+//                        .border(category.borderColor, width: 2)
+//                }
+//            }
+            Spacer()
         }
     }
 }
