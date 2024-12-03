@@ -39,8 +39,9 @@ struct HomeView: View {
                            categories: [],
                            createdAt: .now,
                            modifiedAt: .now),
-              createdAt: "")
+              createdAt: .now)
     ]
+              
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
             HomeHeaderView()
@@ -49,16 +50,6 @@ struct HomeView: View {
                     PostSummaryView(post: post)
                 }
             }
-//            HStack(alignment: .top) {
-//                ForEach(subscriptedCategories, id: \.self) { category in
-//                    Text(category.name)
-//                        .padding(.horizontal, 8)
-//                        .padding(.vertical, 4)
-//                        .foregroundColor(category.textColor)
-//                        .background(category.backgroundColor)
-//                        .border(category.borderColor, width: 2)
-//                }
-//            }
             Spacer()
         }
     }

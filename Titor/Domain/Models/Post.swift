@@ -9,7 +9,7 @@ struct Post: Hashable {
     let reactions: [Reaction]
     let interactions: [Post]
     let forum: Forum
-    let createdAt: String
+    let createdAt: Date
 }
 
 public enum Reaction: Hashable {
